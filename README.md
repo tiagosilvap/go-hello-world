@@ -1,3 +1,3 @@
 ## Code.education Rocks!
-Para fazer push da imagem gerada no DockerHub:
-<b>docker push tiagosp13/codeeducation</b>
+Para executar o container da imagem gerada no DockerHub:
+<b>docker run tiagosp13/codeeducation</b>
