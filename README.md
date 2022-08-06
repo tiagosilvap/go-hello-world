@@ -1,3 +1,3 @@
 ## Code.education Rocks!
-Para executar o container da imagem gerada no DockerHub:
+DockerHub:
 <b>docker run tiagosp13/codeeducation</b>
