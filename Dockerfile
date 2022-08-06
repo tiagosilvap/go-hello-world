@@ -3,10 +3,10 @@ WORKDIR /app
 COPY go.* ./
 RUN go mod download
 COPY *.go ./
-RUN go build -o hello
+RUN go build -ldflags -w
 
-FROM alpine:3.14
+FROM scratch
 WORKDIR /
-COPY --from=builder /app/hello /hello
+COPY --from=builder /app/helloworld /helloworld
 EXPOSE 8080
-ENTRYPOINT ["./hello"]
+ENTRYPOINT ["./helloworld"]
